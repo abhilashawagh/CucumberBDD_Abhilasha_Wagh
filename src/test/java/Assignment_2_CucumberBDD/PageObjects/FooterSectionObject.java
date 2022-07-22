@@ -76,10 +76,10 @@ public class FooterSectionObject {
     }
 
 //============ 4. Method to validate twitter account name ==================================//
-    public void twitterAcNameValidation()
+    public void twitterAcNameValidation(String AcName)
     {
     	WebElement twitterAcNameElement =driver.findElement(twitterAcName);
-    	Assert.assertEquals(true, twitterAcNameElement.isDisplayed());
+    	Assert.assertEquals(AcName, twitterAcNameElement.getText());
     	logger.info("Validate twitter account name, account name is: "+twitterAcNameElement.getText());
     	scn.log("Validate twitter account name, account name is: "+twitterAcNameElement.getText());
     }

@@ -207,8 +207,8 @@ public class StepDefFile {
 		footerObject.twitterAcPage();
 	}
 	@Then("User see the twitter account name {string}")
-	public void user_see_the_twitter_account_name(String string) {
-		footerObject.twitterAcNameValidation();
+	public void user_see_the_twitter_account_name(String AcName) {
+		footerObject.twitterAcNameValidation(AcName);
 	}
 	
 //===================== 10. NewsLetterSubscription Scenario ===================================================//	
